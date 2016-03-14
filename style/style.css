@@ -1,0 +1,405 @@
+body{
+    height: 100%;
+    background-color: #ffffff;
+}
+
+/*覆盖层*/
+.menu-wrapper-background{
+    position: fixed;
+    z-index: 99999;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+
+}
+
+/*一层导航*/
+.menu-top{
+    position: fixed !important;
+    z-index: 999999999;
+    max-height: 428px;
+    width:300px!important;
+    left: 50%;
+    margin-left: -150px;
+    border: solid 1px #cacaca;
+}
+.menu-top{
+    border-top: solid 1px rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,1);
+    top: -500px;
+    height: 100%;
+    overflow: scroll !important;
+    -webkit-overflow-scrolling:touch!important;
+    transition: all 350ms ease;
+    border-radius: 10px;
+
+}
+
+.show-menus{
+    top: 50%;
+    margin-top: -210px;
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -ms-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.menu-top a{
+    font-size: 13px;
+    font-weight: 500;
+    padding-left: 70px;
+    color: #3b4043;
+    line-height: 60px;
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+}
+
+.menu-top a:hover{
+    color: #000000;
+}
+
+.menu-top li{
+    list-style: none;
+    margin-bottom: 0px;
+}
+.menu-top li a:hover{
+    background-color: rgba(0,0,0,0.05)!important;
+}
+
+/*二层导航*/
+.submenu{
+    margin-bottom: 0px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 350ms ease;
+}
+.show-submenu{
+    max-height: 500px!important;
+    transition: all 350ms ease;
+}
+.submenu a{
+    font-size: 12px;
+    line-height: 60px!important;
+    opacity: 0.8;
+    padding-left: 90px;
+}
+.submenu li:hover{
+    background-color: rgba(0,0,0,0.02);
+}
+
+/*导航图示*/
+.menu-top a i{
+    position: absolute;/*父元素有设置了position，absolute的top。left就从border内的左上角开始*/
+    margin-top: 24px;
+    margin-left: -40px;
+}
+
+.active-menu .fa-circle{
+    color: #2ecc71!important;
+}
+.menu-top .fa-circle{
+    /*position: absolute;!important;*/
+    float: right;
+    right: 0px;
+    margin-right: 25px;
+    font-size: 8px;
+    margin-top: 26px;
+}
+.menu-top .fa-angle-right{
+    position: absolute;
+    left: 66px;
+    margin-left: 0px;
+}
+.menu-top .fa-plus{
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    right: 0px;
+    margin-right: 25px;
+    font-size: 11px;
+    transition: all 350ms ease;
+}
+.active-plus{
+    color: #c0392b;
+    -ms-transform: rotate(135deg)!important;
+    -webkit-transform: rotate(135deg)!important;
+    transform: rotate(135deg)!important;
+}
+.has-submenu .fa-mobile{
+    font-size:20px;
+    margin-top: 19px;
+}
+
+/*导航头*/
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    height: 60px;
+    background-image:url(../images/menu-bg.png);
+}
+.header-clear{
+    height: 60px;
+}
+.header-logo{
+    background-image: url(../images/logo.png);
+    background-size: 70px 15px;
+    height: 15px;
+    width: 70px;
+    float: left;
+    margin-top: 22px;
+    margin-left: 30px;
+}
+.header-nav{
+    float: right;
+    color: #ffffff;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.header-nav:hover{
+    color: #ffffff;
+    background-color: rgba(255,255,255,0.1);
+}
+
+#owl-demo .item {
+    display: block;
+}
+/*道航头动画*/
+@-webkit-keyframes swingInX {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(-90deg)
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotateX(0deg)
+    }
+}
+
+@-moz-keyframes swingInX {
+    0% {
+        -moz-transform: perspective(400px) rotateX(-90deg)
+    }
+    100% {
+        -moz-transform: perspective(400px) rotateX(0deg)
+    }
+}
+
+@-o-keyframes swingInX {
+    0% {
+        -o-transform: perspective(400px) rotateX(-90deg)
+    }
+    100% {
+        -o-transform: perspective(400px) rotateX(0deg)
+    }
+}
+
+@keyframes swingInX {
+    0% {
+        transform: perspective(400px) rotateX(-90deg)
+    }
+    100% {
+        transform: perspective(400px) rotateX(0deg)
+    }
+}
+@-webkit-keyframes swingOutX {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(0deg)
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotateX(-90deg)
+    }
+}
+
+@-moz-keyframes swingOutX {
+    0% {
+        -moz-transform: perspective(400px) rotateX(0deg)
+    }
+    100% {
+        -moz-transform: perspective(400px) rotateX(-90deg)
+    }
+}
+
+@-o-keyframes swingOutX {
+    0% {
+        -o-transform: perspective(400px) rotateX(0deg)
+    }
+    100% {
+        -o-transform: perspective(400px) rotateX(-90deg)
+    }
+}
+
+@keyframes swingOutX {
+    0% {
+        transform: perspective(400px) rotateX(0deg)
+    }
+    100% {
+        transform: perspective(400px) rotateX(-90deg)
+    }
+}
+.animated.swingInX {
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    -ie-transform-origin: top;
+    -o-transform-origin: top;
+    transform-origin: top;
+    -webkit-backface-visibility: visible!important;
+    -webkit-animation-name: swingInX;
+    -moz-backface-visibility: visible!important;
+    -moz-animation-name: swingInX;
+    -o-backface-visibility: visible!important;
+    -o-animation-name: swingInX;
+    backface-visibility: visible!important;
+    animation-name: swingInX;
+}
+.animated.swingOutX {
+    -webkit-transform-origin: top;
+    -webkit-animation-name: swingOutX;
+    -webkit-backface-visibility: visible!important;
+    -moz-animation-name: swingOutX;
+    -moz-backface-visibility: visible!important;
+    -o-animation-name: swingOutX;
+    -o-backface-visibility: visible!important;
+    animation-name: swingOutX;
+    backface-visibility: visible!important;
+}
+.animated.swingBInX{
+    transform-origin: bottom;
+    backface-visibility: visible!important;
+    animation-name: swingInX;
+}
+.animated.swingBOutX{
+    transform-origin: bottom;
+    backface-visibility: visible!important;
+    animation-name: swingOutX;
+}
+.animated {
+    -webkit-animation-duration: .5s;
+    -moz-animation-duration: .5s;
+    -o-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/*通知公告主题设计*/
+.module-news{
+    border-top: solid 1px #d3d3d3;
+    padding-top: 30px;
+}
+.module-title{
+    font-family: Arial,Helvetica,freesans,sans-serif;
+    margin-bottom: 1rem;
+}
+.module-title-link{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #4a4a4a;
+}
+
+/*颜色条注标识*/
+.tag::before{
+    content: " ";
+    display: inline-block;
+    margin-right: 0.5rem;
+    border-left: solid 2px #47a1d8;
+    height: 0.75rem;
+}
+.tag-news::before{
+    border-color: #e91802;
+}
+.tag-notify::before{
+    border-color: #ffd903;
+}
+.module-title-link.tag::before { /*同时拥有俩个类的元素*/
+    height: 1.125rem;
+    border-left-width: 0.225rem;
+}
+
+/*列表内部微调*/
+.media-list-item{
+    list-style-type: none;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-bottom: solid 1px #d3d3d3;
+}
+.media-title{
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+.media-link,.media-link:hover{
+    color: #000;
+    /*font-size: 1rem;*/
+    font-family: '宋体 ', sans-serif;
+    line-height: 25px;
+}
+.media-tag{
+    margin-top: 0.5rem;
+    color: #767676;
+}
+.media-tag.tag::before{
+    height: 0.5625rem;
+    border-left-width: 0.125rem;
+}
+
+footer{
+    padding-top: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    width: 100%;
+    bottom: 0;
+    z-index: 99999;
+    position: fixed;
+}
+.center-text{
+    float: left;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-contact{
+    position: absolute;
+    right: 8%;
+    top: 35%;
+    transition: all 200ms ease;
+}
+.footer-share{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 35px;
+    color: #ffffff;
+    background-color: gray;
+}
+.footer-contact:hover{
+    transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transition: all 200ms ease;
+}
+.footer-share i{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+}
+.fa-share-alt::before{
+    content: "\f003";
+}
+
+.share-bottom p{
+    text-align: center;
+}
+
+/*时间线列表*/
+.timeline-text h3{
+    margin-top: 18px;
+}
