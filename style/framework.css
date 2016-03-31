@@ -373,6 +373,7 @@ a {
     clear: both;
     margin-left: 30px;
     margin-right: 30px;
+    position: static;
 }
 
 @media (min-width: 768px) {
@@ -911,173 +912,6 @@ a {
     width: 12px;
 }
 
-.address-list {
-    background-image: url(../images/lists/address_48.png);
-}
-
-.block-list {
-    background-image: url(../images/lists/block_48.png);
-}
-
-.bookmark-list {
-    background-image: url(../images/lists/bookmark_48.png);
-}
-
-.briefcase-list {
-    background-image: url(../images/lists/briefcase_48.png);
-}
-
-.bubble-list {
-    background-image: url(../images/lists/bubble_48.png);
-}
-
-.buy-list {
-    background-image: url(../images/lists/buy_48.png);
-}
-
-.calendar-list {
-    background-image: url(../images/lists/calendar_48.png);
-}
-
-.clipboard-list {
-    background-image: url(../images/lists/clipboard_48.png);
-}
-
-.clock-list {
-    background-image: url(../images/lists/clock_48.png);
-}
-
-.delete-list {
-    background-image: url(../images/lists/delete_48.png);
-}
-
-.diagram-list {
-    background-image: url(../images/lists/diagram_48.png);
-}
-
-.document-list {
-    background-image: url(../images/lists/document_48.png);
-}
-
-.down-list {
-    background-image: url(../images/lists/down_48.png);
-}
-
-.flag-list {
-    background-image: url(../images/lists/flag_48.png);
-}
-
-.folder-list {
-    background-image: url(../images/lists/folder_48.png);
-}
-
-.gear-list {
-    background-image: url(../images/lists/gear_48.png);
-}
-
-.globe-list {
-    background-image: url(../images/lists/globe_48.png);
-}
-
-.heart-list {
-    background-image: url(../images/lists/heart_48.png);
-}
-
-.help-list {
-    background-image: url(../images/lists/help_48.png);
-}
-
-.home-list {
-    background-image: url(../images/lists/home_48.png);
-}
-
-.info-list {
-    background-image: url(../images/lists/info_48.png);
-}
-
-.key-list {
-    background-image: url(../images/lists/key_48.png);
-}
-
-.label-list {
-    background-image: url(../images/lists/label_48.png);
-}
-
-.left-list {
-    background-image: url(../images/lists/left_48.png);
-}
-
-.letter-list {
-    background-image: url(../images/lists/letter_48.png);
-}
-
-.monitor-list {
-    background-image: url(../images/lists/monitor_48.png);
-}
-
-.pencil-list {
-    background-image: url(../images/lists/pencil_48.png);
-}
-
-.plus-list {
-    background-image: url(../images/lists/plus_48.png);
-}
-
-.present-list {
-    background-image: url(../images/lists/present_48.png);
-}
-
-.print-list {
-    background-image: url(../images/lists/print_48.png);
-}
-
-.right-list {
-    background-image: url(../images/lists/right_48.png);
-}
-
-.save-list {
-    background-image: url(../images/lists/save_48.png);
-}
-
-.search-list {
-    background-image: url(../images/lists/search_48.png);
-}
-
-.shield-list {
-    background-image: url(../images/lists/shield_48.png);
-}
-
-.statistics-list {
-    background-image: url(../images/lists/statistics_48.png);
-}
-
-.stop-list {
-    background-image: url(../images/lists/stop_48.png);
-}
-
-.tick-list {
-    background-image: url(../images/lists/tick_48.png);
-}
-
-.trash-list {
-    background-image: url(../images/lists/trash_48.png);
-}
-
-.up-list {
-    background-image: url(../images/lists/up_48.png);
-}
-
-.user-list {
-    background-image: url(../images/lists/user_48.png);
-}
-
-.wallet-list {
-    background-image: url(../images/lists/wallet_48.png);
-}
-
-.warning-list {
-    background-image: url(../images/lists/warning_48.png);
-}
 
 /*	8. Table  */
 
@@ -1307,71 +1141,6 @@ table tr:hover td {
 }
 
 /*	11. Radio and Checkboxe */
-
-.checkbox-one {
-    background-image: url(../images/ui/checkbox1.png);
-    background-size: 16px 18px;
-    background-repeat: no-repeat;
-    padding-left: 30px;
-    background-position: 0px 1px;
-    margin-bottom: 10px;
-}
-
-.checkbox-one-checked {
-    background-image: url(../images/ui/checkbox1c.png);
-}
-
-.checkbox-two {
-    background-image: url(../images/ui/checkbox2.png);
-    background-size: 16px 18px;
-    background-repeat: no-repeat;
-    padding-left: 30px;
-    background-position: 0px 1px;
-    margin-bottom: 10px;
-}
-
-.checkbox-two-checked {
-    background-image: url(../images/ui/checkbox2c.png);
-}
-
-.checkbox-three {
-    background-image: url(../images/ui/checkbox3.png);
-    background-size: 16px 16px;
-    background-repeat: no-repeat;
-    padding-left: 30px;
-    background-position: 0px 2px;
-    margin-bottom: 10px;
-}
-
-.checkbox-three-checked {
-    background-image: url(../images/ui/checkbox3c.png);
-}
-
-.radio-one {
-    background-image: url(../images/ui/radio1.png);
-    background-size: 16px 18px;
-    background-repeat: no-repeat;
-    padding-left: 30px;
-    background-position: 0px 1px;
-    margin-bottom: 10px;
-}
-
-.radio-one-checked {
-    background-image: url(../images/ui/radio1c.png);
-}
-
-.radio-two {
-    background-image: url(../images/ui/radio2.png);
-    background-size: 16px 18px;
-    background-repeat: no-repeat;
-    padding-left: 30px;
-    background-position: 0px 1px;
-    margin-bottom: 10px;
-}
-
-.radio-two-checked {
-    background-image: url(../images/ui/radio2c.png);
-}
 
 /*	12. Charts */
 
@@ -1770,38 +1539,6 @@ table tr:hover td {
 
 .toggle-3 {
 
-}
-
-.deploy-toggle-1 {
-    padding: 15px;
-    padding-left: 50px;
-    font-size: 13px;
-    color: #343434;
-    text-transform: uppercase;
-    background-image: url(../images/ui/plus.png);
-    background-repeat: no-repeat;
-    background-size: 12px 12px;
-    background-position: 15px 19px;
-}
-
-.toggle-1-active {
-    background-image: url(../images/ui/minus.png);
-}
-
-.deploy-toggle-2 {
-    padding: 15px;
-    padding-left: 50px;
-    font-size: 13px;
-    color: #343434;
-    text-transform: uppercase;
-    background-image: url(../images/lists/plus_48.png);
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    background-position: 15px 18px;
-}
-
-.toggle-2-active {
-    background-image: url(../images/lists/delete_48.png);
 }
 
 .deploy-toggle-3 {
@@ -4884,17 +4621,6 @@ table tr:hover td {
 
 .calendar-hour em i {
     margin-right: 10px;
-}
-
-.box {
-    width: auto;
-    /*一部列表所占高度*/
-    height: auto;
-    /*只有设置了relative，才能有top偏移量*/
-    position: relative;
-    /*top:-922px;这是加上margin的位置偏移*/
-    /*让滑出部分掩藏*/
-    overflow: visible;
 }
 
 

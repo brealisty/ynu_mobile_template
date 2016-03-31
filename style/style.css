@@ -270,16 +270,6 @@ body{
     animation-name: swingOutX;
     backface-visibility: visible!important;
 }
-.animated.swingBInX{
-    transform-origin: bottom;
-    backface-visibility: visible!important;
-    animation-name: swingInX;
-}
-.animated.swingBOutX{
-    transform-origin: bottom;
-    backface-visibility: visible!important;
-    animation-name: swingOutX;
-}
 .animated {
     -webkit-animation-duration: .5s;
     -moz-animation-duration: .5s;
@@ -352,14 +342,16 @@ body{
     border-left-width: 0.125rem;
 }
 
-footer{
+.footer{
     padding-top: 20px;
     background-color: #f2f2f2;
     border-radius: 8px;
-    width: 100%;
-    bottom: 0;
-    z-index: 99999;
+    width: 100%;  
+}
+#footer{
+ /*   z-index: 99999;
     position: fixed;
+*/
 }
 .center-text{
     float: left;
